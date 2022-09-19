@@ -638,7 +638,7 @@
 							<!-- Single-promo start -->
 							<div class="col-lg-6 padding-0">
 								<div class="single-promo-banner promo-banner-1">
-									<img src="img/banner/promo-banner/1.png" alt="" /> 
+									<!--<img src="img/banner/promo-banner/1.png" alt="" />-->
 									<div class="promo-banner-brief">
 										<h2>sale !</h2>
 										<h3>up to <span>30%</span>  off</h3>
@@ -1594,7 +1594,26 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			window.addEventListener('mouseover', initLandbot, { once: true });
+			window.addEventListener('touchstart', initLandbot, { once: true });
+			var myLandbot;
+			function initLandbot() {
+			  if (!myLandbot) {
+				var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+				s.addEventListener('load', function() {
+				  var myLandbot = new Landbot.Livechat({
+					configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1367523-61NUXT3988JDJV7S/index.json',
+				  });
+				});
+				s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+				var x = document.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			  }
+			}
+			</script>
 		<!-- FOOTER-AREA END -->
+			
 
 		
 		<!-- all js here -->
