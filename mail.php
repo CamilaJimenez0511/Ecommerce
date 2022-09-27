@@ -51,4 +51,15 @@
         echo "There was a problem with your submission, please try again.";
     }
 
+    $ServerName = "bdtransporte.database.windows.net";
+    $ConnectionOption = array ("Database" => "Transporte","Uid" => "camilaj", "PWD" => "Macajiro20");
+    $conn = sqlsrv_connect($ServerName,$ConnectionOption);
+
+    if($conn){
+        echo "Conectado";
+    }
+    else{
+        echo"No";
+    }
+
 ?>
