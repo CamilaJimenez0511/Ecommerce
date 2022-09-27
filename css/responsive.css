@@ -298,7 +298,7 @@
 }
 .single-promo-banner.promo-banner-2,
 .single-promo-banner.promo-banner-1 {
-  background-position: left top;
+  /*background-position: left top;*/
 }
 .single-promo-banner.promo-banner-1 {margin-bottom: 30px;}
 /* count-down */
